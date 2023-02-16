@@ -24,9 +24,11 @@ for i in range(a, b + 1):
 
 # Bai 04: Dung ham tren de in ra 10 so nguyen to lon hon n
 # voi n nhap tu ban phim
-n = int(input("\nNhap so n: "))
 cnt = 0
+n = int(input("\nNhap so n: "))
+
 print(f"10 SNT lon hon {n} la:")
+
 while cnt < 10:
     if isPrime(n):
         print(n, end=" ")
@@ -37,6 +39,7 @@ while cnt < 10:
 
 # Bai 06: Tim so Fibonacci thu n su dung lambda function
 n = int(input("Tim so nguyen to thu n: "))
+
 # Su dung cong thuc so hang tong quat:
 can5 = sqrt(5)
 fib = lambda n: int((pow((1 + can5) / 2, n) - pow((1 - can5) / 2, n)) / can5)

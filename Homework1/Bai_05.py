@@ -11,10 +11,3 @@ def isPrime(n: int):
             return False
         i += 6
     return True
-
-from math import sqrt, pow
-n = int(input("Tim so nguyen to thu n: "))
-# Su dung cong thuc tong quat:
-can5 = sqrt(5)
-fib = lambda n: int((pow((1 + can5) / 2, n) - pow((1 - can5) / 2, n)) / can5)
-print(f"Fibonacci_{n} = {fib(n)}")
